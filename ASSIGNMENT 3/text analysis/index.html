@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analysis Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Text Analysis Tool</h1>
+    <textarea id="textInput" placeholder="Type your text here..."></textarea>
+    <div>
+        <label for="bgColor">Select Background Color:</label>
+        <input type="color" id="bgColor" onchange="changeBackgroundColor()">
+    </div>
+    <div>
+        <label for="textColor">Select Text Color:</label>
+        <input type="color" id="textColor" onchange="changeTextColor()">
+    </div>
+    <button onclick="analyzeText()">Analyze Text</button>
+
+    <h3>Analysis Results:</h3>
+    <div id="outputBox">
+        <p id="resultAlphabets">Number of Alphabets: 0</p>
+        <p id="resultDigits">Number of Digits: 0</p>
+        <p id="resultSpecial">Number of Special Characters: 0</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
